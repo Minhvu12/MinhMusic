@@ -324,8 +324,10 @@ const app = {
             alert('Bật cùng lúc replay và random sẽ gây ra lỗi vui lòng dùng một trong hai');
             repetActive = false;
             isactiveP = false;
+            audio.loop = false;
             randomActive = false;
             isactiveR = false;
+            app.randomSongIndex();
             $('.fa-random').classList.remove('active');
             $('.fa-redo').classList.remove('active');
         }
